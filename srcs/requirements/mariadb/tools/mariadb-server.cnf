@@ -1,0 +1,17 @@
+[server]
+
+[mysqld]
+
+skip-networking=OFF
+
+[galera]
+
+bind-address=0.0.0.0
+
+[embedded]
+
+[mariadb]
+
+[mariadb=10.5]
+
+port=3306

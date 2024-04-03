@@ -2,10 +2,16 @@ version: '3'
 
 services:
   nginx:
+    networks: 
+      - Inception
     container_name: nginx
     restart: always
     build:
       context: ./
       dockerfile: ./requirements/nginx/Dockerfile
     ports:
-      443:443 
+      - 443:443 
+
+networks:
+  Inception:
+    name: Inception
